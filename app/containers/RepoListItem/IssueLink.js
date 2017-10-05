@@ -6,6 +6,12 @@ const IssueLink = NormalA.extend`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  color: ${(props) => props.theme.main};
+
+  &:hover {
+    color: ${(props) => props.theme.secondary};
+  }
 `;
 
 export default IssueLink;

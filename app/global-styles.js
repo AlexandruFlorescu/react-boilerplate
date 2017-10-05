@@ -14,9 +14,11 @@ injectGlobal`
 
   body.fontLoaded {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: ${(props) => props.theme.main};
   }
 
   #app {
+    background: url('binding_dark.png');
     background-color: #fafafa;
     min-height: 100%;
     min-width: 100%;

@@ -6,6 +6,12 @@ const RepoLink = NormalA.extend`
   display: flex;
   align-items: center;
   width: 100%;
+
+  color: ${(props) => props.theme.main};
+
+  &:hover {
+    color: ${(props) => props.theme.secondary};
+  }
 `;
 
 export default RepoLink;

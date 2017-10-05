@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import ThemePicker from 'containers/ThemePicker';
 
 import A from './A';
 import Img from './Img';
@@ -8,6 +9,7 @@ import HeaderLink from './HeaderLink';
 import Banner from './banner.jpg';
 import messages from './messages';
 
+
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
@@ -15,6 +17,9 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
         <A href="https://twitter.com/mxstbr">
           <Img src={Banner} alt="react-boilerplate - Logo" />
         </A>
+        <ThemePicker>
+
+        </ThemePicker>
         <NavBar>
           <HeaderLink to="/">
             <FormattedMessage {...messages.home} />
